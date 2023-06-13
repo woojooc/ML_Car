@@ -1,10 +1,32 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 # kb 차차차 스크롤링
 # kb차차는 인천, 수원 지역 매물이 주로 올라온다.
 # 전체 매물은 약 15만 건이나 크롤링 테스트 용도로 kb차차차를 거치지 않는 직거래(약 1000개의 데이터)를 크롤링 하겠다.
+
+# bs4 : 정적인 HTML을 파싱. JS같은 기능을 처리하는데는 한계
+# selenium : 웹 driver를 활용한 웹 자동화 도구
+# 차차차의 경우 목록을 클릭해야 상세 페이지로 넘어가기 때문에 셀레니움을 같이 사용해야할 것
+
+# 크롬 웹드라이버 설치 및 설정
+chrome_options = webdriver.ChromeOptions()
+
+
+# user 로 보이기위한 user_agent// 각자의 컴퓨터에 맞게 확인 필요
+# user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36'
+chrome_options.add_argument('user-agent=' + user_agent)
+
+chrome_options.add_experimental_option('detach', True)
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+driver.maximize_window()
 
 url = 'https://www.kbchachacha.com/public/search/main.kbc#!?page={}&sort=-orderDate&directYn=Y'
 
