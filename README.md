@@ -15,11 +15,14 @@
 메타버스 아카데미 2기 AI반 라경훈, 김우정, 임정민, 서주완 등 총 4명
 
 ### ✔️ 역할 분담
-모든 팀원들의 전반적인 머신러닝 프로젝트 프로세스 경험을 위해 데이터 수집/전처리, EDA , 모델링, 파라미터 튜닝, 인사이트 도출 등을 각각 수행하였습니다. 단, 주요 머신러닝 모델들(XGBoost/LightGBM, RandomFroest, LinearRegression, Lasso/Lidge)을 전담하여 학습하고 비교하였습니다.
+모든 팀원들의 전반적인 머신러닝 프로젝트 프로세스 경험을 위해 데이터 수집/전처리, EDA , 모델링, 파라미터 튜닝, 인사이트 도출 등을 각각 수행하였습니다. 각 팀원별 이름 (lala,wj,jm,jw)으로 branch를 나누어 기록하였습니다. 단, 주요 머신러닝 모델들(XGBoost/LightGBM, RandomFroest, LinearRegression, Lasso/Lidge)을 전담하여 학습하고 비교하였습니다.
 
 LinearRegression : 라경훈
+
 Lasso/Lidge : 김우정
+
 RandomForest : 임정민
+
 XGBoost/LightGBM : 서주완
 
 
@@ -39,7 +42,30 @@ XGBoost/LightGBM : 서주완
 - 23-06-21 : PT 발표 및 질의응답
 
 
-# 📃 데이터 소개 
+# 📃 데이터 소개
+### ✔️ Dacon '데이콘 Basic 자동차 가격 예측 AI 경진대회' 데이터셋을 활용하였습니다.
+[데이콘 Basic 자동차 가격 예측 AI 경진대회](https://dacon.io/competitions/official/236114/overview/description) <br><br>
+
+![image](https://github.com/woojooc/ML_Car/assets/115389344/66e2a813-ab89-4802-92a7-8d49f6fe1173)
+
+
+### ✔️ 데이터 세부 사항
+데이터 갯수 : 57920개<br>
+ID : 샘플 별 고유 id<br>
+생산년도 : 차량이 생산된 연도<br>
+모델출시년도 : 차량의 모델이 처음으로 출시된 연도<br>
+브랜드<br>
+차량모델명<br>
+판매도시 : 3글자로 인코딩된 도시 이름<br>
+판매구역 : 3글자로 인코딩된 구역 이름<br>
+주행거리 : 총 주행 거리(km)<br>
+배기량 : 내연기관에서 피스톤이 최대로 밀어내거나 빨아들이는 부피 (cc)<br>
+압축천연가스(CNG) : 압축천연가스(CNG) 자동차 여부<br>
+경유 : 경유 자동차 여부<br>
+가솔린 : 가솔린 자동차 여부<br>
+하이브리드 : 하이브리드 자동차 여부<br>
+액화석유가스(LPG) : 액화석유가스(LPG) 자동차 여부<br>
+가격 : 자동차 가격(백만원)<br>
 
 # 💡 주요 내용
 
