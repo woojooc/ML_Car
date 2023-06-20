@@ -15,11 +15,11 @@
 메타버스 아카데미 2기 AI반 라경훈, 김우정, 임정민, 서주완 등 총 4명
 
 ### ✔️ 역할 분담
-모든 팀원들의 전반적인 머신러닝 프로젝트 프로세스 경험을 위해 데이터 수집/전처리, EDA , 모델링, 파라미터 튜닝, 인사이트 도출 등을 각각 수행하였습니다. 각 팀원별 이름 (lala,wj,jm,jw)으로 branch를 나누어 기록하였습니다. 단, 주요 머신러닝 모델들(XGBoost/LightGBM, RandomFroest, LinearRegression, Lasso/Lidge)을 전담하여 학습하고 비교하였습니다.
+모든 팀원들의 전반적인 머신러닝 프로젝트 프로세스 경험을 위해 데이터 수집/전처리, EDA , 모델링, 파라미터 튜닝, 인사이트 도출 등을 각각 수행하였습니다. 각 팀원별 이름 (lala,wj,jm,jw)으로 branch를 나누어 기록하였습니다. 단, 주요 머신러닝 모델들(XGBoost/LightGBM, RandomFroest, LinearRegression, Lasso)을 전담하여 학습하고 비교하였습니다.
 
 LinearRegression : 라경훈
 
-Lasso/Lidge : 김우정
+Lasso : 김우정
 
 RandomForest : 임정민
 
@@ -29,16 +29,16 @@ XGBoost/LightGBM : 서주완
 # 📅프로젝트 진행 기록
 
 ### ✔️ 수행 기간
-2023.06.13 ~ 2023.06.20
+2023.06.13 ~ 2023.06.21
 
 ### ✔️ 세부 진행 기록
 - 23-06-12 : 회의 및 주제 정하기, 보배드림 데이터 크롤링
 - 23-06-13 : Dacon 데이터 수집, EDA
 - 23-06-14 : PPT 초안 작성, EDA, 워드클라우드
-- 23-06-15 : 머신 러닝 회귀 모델링 (XGBoost/LightGBM, RandomForest, LinearRegression, Lasso/Lidge)
+- 23-06-15 : 머신 러닝 회귀 모델링 (XGBoost/LightGBM, RandomForest, LinearRegression, Lasso)
 - 23-06-16 : K-Fold 학습, GridSearchcv 하이퍼파라미터 튜닝 학습 후 비교
-- 23-06-19 : GridSearchcv 하이퍼파라미터 튜닝, autoML (Pycaret) 학습, PPT 수정
-- 23-06-20 : 인사이트 도출 , 발표 대본 작성 
+- 23-06-19 : GridSearchcv 하이퍼파라미터 튜닝, AutoML (Pycaret) 학습, PPT 수정
+- 23-06-20 : AutoML(Optuna, Autogluon)학습, 각 모델별 MAE 비교, 인사이트 도출 , PPT 수정, 발표 대본 작성 
 - 23-06-21 : PT 발표 및 질의응답
 
 
