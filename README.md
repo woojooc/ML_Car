@@ -2,7 +2,7 @@
 
 ### ✔️ 수입 중고차 가격 예측 프로젝트 (메티버스 아카데미 2기 AI반 ML 프로젝트)
 
-# 📃 프로젝트 소개 
+# 📃 프로젝트 소개
 
 ### ✔️ 머신러닝(XGBoost/LightGBM, RandomFroest, LinearRegression, Lasso/Lidge)을 활용한 수입 (외제) 중고차 가격 예측 프로젝트입니다.  
 
