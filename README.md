@@ -90,28 +90,29 @@ ID : 샘플 별 고유 id<br>
 ### ✔️ 머신 러닝
 
 1. 데이터 전처리<br>
-   (1) 신차 / 중고차 분리 : 주행거리 < 200km 의 신차 데이터 drop
-   (2) 이상치 데이터 제거 : 주행거리 >= 250만km (최댓값) 데이터 1개 관측/제거
-   (3) 중복 Feature 통합 : get_dummies화된 연료 유형 통합
-   (4) 불필요한 컬럼 제거 : 'ID'(데이터 고유 키값) , 'City','Area' : 모두 폴란드 지역/도시
-   (5) 문자형 데이터 변환 : '브랜드','차량모델명','판매도시','판매구역' Label Encoding
-   (6) (선택사항) MinMaxScaling : '연도','차량모델출시년도' MinMaxScaler 적용
+   (1) 신차 / 중고차 분리 : 주행거리 < 200km 의 신차 데이터 drop<br>
+   (2) 이상치 데이터 제거 : 주행거리 >= 250만km (최댓값) 데이터 1개 관측/제거<br>
+   (3) 중복 Feature 통합 : get_dummies화된 연료 유형 통합<br>
+   (4) 불필요한 컬럼 제거 : 'ID'(데이터 고유 키값) , 'City','Area' : 모두 폴란드 지역/도시<br>
+   (5) 문자형 데이터 변환 : '브랜드','차량모델명','판매도시','판매구역' Label Encoding<br>
+   (6) (선택사항) MinMaxScaling : '연도','차량모델출시년도' MinMaxScaler 적용<br>
 2. 학습 결과 (MAE) <br>
-   (1) LightGBM : 6.8398
-   (2) RandomForest : 6.3714 (K-fold,cv=5,avg값 기준)
-   (3) XGBoost : 6.4092
-   (4) LinearRegression : 11.95
-   (5) Lasso/LassoCV : 13.44 (alpha=1)
+   (1) LightGBM : 6.8398<br>
+   (2) RandomForest : 6.3714 (K-fold,cv=5,avg값 기준)<br>
+   (3) XGBoost : 6.4092<br>
+   (4) LinearRegression : 11.95<br>
+   (5) Lasso/LassoCV : 13.44 (alpha=1)<br>
 
     💡MAE 기준 가장 낮은 RandomForest 의 Feature_importances : '생상년도','CC','주행거리','차량출시년도'
 
 3. AutoML <br>
 
-   (1) 
-   (2) 
-   (3)
-   (4) 
-   (5)
+   (1) 앞서 구현한 모델들의 MAE값을 줄이기 위해 Optuna, Auto Gluon, Pycaret 총 3가지의 AutoML을 사용<br>
+   (2) Optuna : xgb의 경우 best Trial의 값이 5.885, lgbm의 경우 best trial의 값이 5.9726으로 기존의 MAE값 보다 더 나은 결과를 도출<br>
+   (3) Auto Gluon :  L2 모델이 6.051919, xgb는 6.245744, lgbm은 6.165254로 기존의 MAE값 보다 더 나은 결과를 도출<br>
+   (4) Pycaret : Blending을 통해 여러 모델들을 혼합하여 새로운 모델 생성 -> MAE가 가장 낮게 나온 모델인 CatBoost, XGBoost 모델 Blending : 5.8961, 렌덤으로 Blending
+       한 모델 :  5.9002, 기존의 MAE 값 보다 더 나은 결과 도출<br>
+   (5) 결론적으로 AutoML을 사용한 결과 모든 프레임 워크들이 기존의 K-Fold된된 모델의 MAE값보다 확연히 낮아진것을 확인하였으며, 그 중에서도 Optuna를 통해 생성한              XGBoost 모델의 MAE값이 가장 좋게 나온 것을 확인<br>
 
    💡
 
