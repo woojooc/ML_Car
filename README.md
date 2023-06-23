@@ -114,6 +114,10 @@ ID : 샘플 별 고유 id<br>
        한 모델 :  5.9002, 기존의 MAE 값 보다 더 나은 결과 도출<br>
    (5) 결론적으로 AutoML을 사용한 결과 모든 프레임 워크들이 기존의 K-Fold된된 모델의 MAE값보다 확연히 낮아진것을 확인하였으며, 그 중에서도 Optuna를 통해 생성한              XGBoost 모델의 MAE값이 가장 좋게 나온 것을 확인<br>
 
+4. Auto ML 학습 결과 (MAE) <br>
+   (1) Optuna (XGBoost) : 5.885<br>
+   (2) Auto Gluon (L2) : 6.051919<br>
+   (3) Pycaret (CatBoost, XGBoost Blend 모델) : 5.8961<br>
    💡
 
 ### ✔️ 결과
