@@ -118,7 +118,7 @@ ID : 샘플 별 고유 id<br>
    (1) Optuna (XGBoost) : 5.885<br>
    (2) Auto Gluon (L2) : 6.051919<br>
    (3) Pycaret (CatBoost, XGBoost Blend 모델) : 5.8961<br>
-   💡
+   
 
 ### ✔️ 결과
 
